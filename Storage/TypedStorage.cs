@@ -1,5 +1,5 @@
-﻿using SubstrateNetApi;
-using SubstrateNetApi.Model.Types;
+﻿using Ajuna.NetApi;
+using Ajuna.NetApi.Model.Types;
 using System.Threading.Tasks;
 using Ajuna.ServiceLayer.Extensions;
 using Serilog;

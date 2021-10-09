@@ -1,16 +1,14 @@
-﻿using Ajuna.ServiceLayer.Attributes;
-using Ajuna.ServiceLayer.Storage;
-using Serilog;
-using SubstrateNetApi;
-using SubstrateNetApi.Model.Rpc;
-using SubstrateNetApi.Model.Meta;
+﻿using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using SubstrateNetApi.Model.Types;
+using Ajuna.NetApi;
+using Ajuna.NetApi.Model.Rpc;
+using Ajuna.ServiceLayer.Attributes;
+using Ajuna.ServiceLayer.Storage;
 
 namespace Ajuna.ServiceLayer
 {

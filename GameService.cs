@@ -1,7 +1,7 @@
 ﻿using Ajuna.ServiceLayer.Storage;
 using Newtonsoft.Json.Linq;
 using Serilog;
-using SubstrateNetApi;
+using Ajuna.NetApi;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

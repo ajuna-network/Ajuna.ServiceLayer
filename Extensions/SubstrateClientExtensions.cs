@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
-using SubstrateNetApi;
-using SubstrateNetApi.Model.Types;
+using Ajuna.NetApi;
+using Ajuna.NetApi.Model.Types;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

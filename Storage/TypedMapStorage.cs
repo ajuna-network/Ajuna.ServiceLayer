@@ -1,10 +1,10 @@
-﻿using SubstrateNetApi;
-using SubstrateNetApi.Model.Types;
+﻿using Ajuna.NetApi;
+using Ajuna.NetApi.Model.Types;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Ajuna.ServiceLayer.Extensions;
 using Serilog;
-using SubstrateNetApi.Model.Types.Base;
+using Ajuna.NetApi.Model.Types.Base;
 
 namespace Ajuna.ServiceLayer.Storage
 {
