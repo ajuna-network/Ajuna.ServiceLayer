@@ -8,7 +8,7 @@
     <Authors>Cedric Decoster</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageDescription>Ajuna Service Layer module to easily implement substrate storage services.</PackageDescription>
-    <PackageProjectUrl>https://github.com/ajuna-network/Ajuna.ServiceLayer/tree/master/Ajuna.ServiceLayer</PackageProjectUrl>
+    <PackageProjectUrl>https://ajuna.io</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/ajuna-network/Ajuna.ServiceLayer</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
