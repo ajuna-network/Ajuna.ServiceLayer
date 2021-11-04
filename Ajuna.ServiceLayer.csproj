@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageId>Ajuna.ServiceLayer</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.2</Version>
+    <Version>0.1.4</Version>
     <Company>BloGa Tech AG</Company>
     <Authors>Cedric Decoster</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ajuna.NetApi" Version="0.1.2" />
+    <PackageReference Include="Ajuna.NetApi" Version="0.1.4" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
   </ItemGroup>
