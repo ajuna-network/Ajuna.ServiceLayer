@@ -1,9 +1,6 @@
-﻿using Ajuna.ServiceLayer.Storage;
-using Newtonsoft.Json.Linq;
+﻿using Ajuna.NetApi;
+using Ajuna.ServiceLayer.Storage;
 using Serilog;
-using Ajuna.NetApi;
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Ajuna.ServiceLayer

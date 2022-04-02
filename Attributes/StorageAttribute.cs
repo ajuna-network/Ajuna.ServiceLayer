@@ -6,7 +6,7 @@ namespace Ajuna.ServiceLayer.Attributes
     public class StorageAttribute : Attribute
     {
         public StorageAttribute()
-        { 
+        {
         }
     }
 }

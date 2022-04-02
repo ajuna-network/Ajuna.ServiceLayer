@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using Ajuna.NetApi;
+﻿using Ajuna.NetApi;
 using Ajuna.NetApi.Model.Types;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -30,7 +29,8 @@ namespace Ajuna.ServiceLayer.Extensions
             var keyString = Utils.Bytes2HexString(RequestGenerator.GetStorageKeyBytesHash(module, storageName)).ToLower();
             var resultStr = await Client.State.GetStorageAsync(keyBytes);
             var value = new T();
-            if (resultStr != null) {
+            if (resultStr != null)
+            {
                 value.Create(resultStr.ToString());
             }
             return value;

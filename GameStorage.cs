@@ -1,14 +1,14 @@
-﻿using Serilog;
+﻿using Ajuna.NetApi;
+using Ajuna.NetApi.Model.Rpc;
+using Ajuna.ServiceLayer.Attributes;
+using Ajuna.ServiceLayer.Storage;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using Ajuna.NetApi;
-using Ajuna.NetApi.Model.Rpc;
-using Ajuna.ServiceLayer.Attributes;
-using Ajuna.ServiceLayer.Storage;
 
 namespace Ajuna.ServiceLayer
 {
@@ -162,7 +162,7 @@ namespace Ajuna.ServiceLayer
                     if (key.Length == 66)
                     {
                         ProcessStorageChange(itemInfo, new string[] { }, change[1]);
-                    } 
+                    }
                     else
                     {
                         ProcessStorageChange(itemInfo, new string[] { key }, change[1]);
@@ -188,7 +188,7 @@ namespace Ajuna.ServiceLayer
                 parameters[parameters.Length - 1] = data;
                 switch (storageItemKeys.Length)
                 {
-                    case 0: 
+                    case 0:
                         break;
                     case 1:
                         parameters[0] = storageItemKeys[0];
@@ -196,7 +196,7 @@ namespace Ajuna.ServiceLayer
                     default:
                         throw new NotImplementedException("Only one storage key accessed for generic service layer!");
                 }
-                
+
                 listener.Item2.Invoke(listener.Item1, parameters);
             }
         }

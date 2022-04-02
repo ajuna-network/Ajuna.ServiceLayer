@@ -1,10 +1,9 @@
 ﻿using Ajuna.NetApi;
 using Ajuna.NetApi.Model.Types;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Ajuna.ServiceLayer.Extensions;
 using Serilog;
-using Ajuna.NetApi.Model.Types.Base;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Ajuna.ServiceLayer.Storage
 {
@@ -12,10 +11,17 @@ namespace Ajuna.ServiceLayer.Storage
     {
         internal string Identifier { get; private set; }
         public Dictionary<string, T> Dictionary { get; private set; }
+        public IStorageChangeDelegate ChangeDelegate { get; private set; }
 
         public TypedMapStorage(string identifier)
         {
             Identifier = identifier;
+        }
+
+        public TypedMapStorage(string identifier, IStorageChangeDelegate changeDelegate)
+        {
+            Identifier = identifier;
+            ChangeDelegate = changeDelegate;
         }
 
         public async Task InitializeAsync(SubstrateClient client, string module, string moduleItem)
@@ -40,6 +46,7 @@ namespace Ajuna.ServiceLayer.Storage
             {
                 Dictionary.Remove(key);
                 Log.Debug($"[{Identifier}] item {{key}} was deleted.", key);
+                ChangeDelegate?.OnDelete(Identifier, key, data);
             }
             else
             {
@@ -50,11 +57,13 @@ namespace Ajuna.ServiceLayer.Storage
                 {
                     Dictionary[key] = iType;
                     Log.Debug($"[{Identifier}] item {{key}} was updated.", key);
+                    ChangeDelegate?.OnUpdate(Identifier, key, data);
                 }
                 else
                 {
                     Dictionary.Add(key, iType);
                     Log.Debug($"[{Identifier}] item {{key}} was created.", key);
+                    ChangeDelegate?.OnCreate(Identifier, key, data);
                 }
             }
         }
