@@ -1,7 +1,5 @@
 # Ajuna.ServiceLayer
-![Build](https://github.com/ajuna-network/Ajuna.ServiceLayer/actions/workflows/dotnet.yml/badge.svg)
-[![Nuget](https://img.shields.io/nuget/v/Ajuna.ServiceLayer)](https://www.nuget.org/packages/Ajuna.ServiceLayer/)
-[![GitHub issues](https://img.shields.io/github/issues/ajuna-network/Ajuna.ServiceLayer.svg)](https://github.com/ajuna-network/Ajuna.ServiceLayer/issues)
-[![license](https://img.shields.io/github/license/ajuna-network/Ajuna.ServiceLayer)](https://github.com/ajuna-network/Ajuna.ServiceLayer/blob/origin/LICENSE)
-[![contributors](https://img.shields.io/github/contributors/ajuna-network/Ajuna.ServiceLayer)](https://github.com/ajuna-network/Ajuna.ServiceLayer/graphs/contributors)  
-*Ajuna Service Layer module to easily implement substrate storage services.*
+![ajuna-Header-1080p_with_logo](https://user-images.githubusercontent.com/17710198/136852531-d9eb47cd-efcd-4c88-bdbf-78dfcbffe287.png)
+
+# 🚧 Repository moved to [Ajuna.SDK](https://github.com/ajuna-network/Ajuna.SDK).
+This project was [moved to a new location](https://github.com/ajuna-network/Ajuna.SDK) and is archived.
